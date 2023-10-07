@@ -7,7 +7,7 @@ interface MenuBtnProps {
 
 const MenuBtn = ({ img, onClick }: MenuBtnProps) => {
   return (
-    <button className="block lg:hidden" onClick={onClick}>
+    <button onClick={onClick}>
       <div className="text-3xl">{img}</div>
     </button>
   )

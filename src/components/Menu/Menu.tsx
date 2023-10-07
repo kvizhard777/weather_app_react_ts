@@ -1,24 +1,15 @@
 import { Icon } from '@iconify/react'
-import Logo from "../Logo/Logo"
-import MenuBtn from "./MenuBtn"
 import LinkBlock from '../LinkBlock/LinkBlock'
 import MainBtn from '../UI/MainBtn/MainBtn'
 
-interface MenuProps {
-  onClick: () => void
-}
-
-const Menu = ({ onClick }: MenuProps) => {
+const Menu = () => {
   return (
     <>
-      <div className='z-50 fixed top-0 left-0 w-full min-h-screen px-5 py-5 bg-neutral-900 flex flex-col gap-12'>
-        <div className='flex items-center justify-between'>
-          <Logo />
-          <MenuBtn img={<Icon icon="material-symbols:close" />} onClick={onClick} />
-        </div>
-
-        <div className='flex flex-col gap-8'>
-          <LinkBlock />
+      <div className='z-50 absolute w-[280px] top-10 right-0 px-2 sm:px-5 py-5 rounded-lg bg-neutral-700/40 backdrop-blur-lg border border-neutral-600'>
+        <div className='flex flex-col gap-4'>
+          <a href="https://openweathermap.org/api" target='_blank'>
+            <LinkBlock />
+          </a>
 
           <a href="https://github.com/kvizhard777/weather_app_react_ts" target='_blank'>
             <MainBtn img={<Icon icon="mdi:github" />} text='Github' />
