@@ -4,7 +4,7 @@ body {
   color: #fff;
   font-family: 'Inter', sans-serif;
 
-  background-image: url('./back-img.png');
+  background-image: url('../../public/back-img.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
